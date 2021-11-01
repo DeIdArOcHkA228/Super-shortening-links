@@ -33,7 +33,7 @@ def is_bitlink(headers, link):
 
 if __name__ == "__main__":
   parser = argparse.ArgumentParser(
-    description='Описание что делает программа'
+    description='Сокращение ссылок'
     )
   parser.add_argument('link', help=' Ваша ссылка')
   args = parser.parse_args()
