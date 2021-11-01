@@ -34,9 +34,9 @@ def is_bitlink(headers, link):
 
 if __name__ == "__main__":
   parser = argparse.ArgumentParser(
-    description='Сокращение ссылок'
+    description="Сокращение ссылок"
     )
-  parser.add_argument('link', help=' Ваша ссылка')
+  parser.add_argument("link", help=" Ваша ссылка")
   args = parser.parse_args()
   load_dotenv()
   headers = {"Authorization": f"Bearer {os.getenv('BITLY_TOKEN')}"}
